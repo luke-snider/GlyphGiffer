@@ -3,6 +3,8 @@ GlyphGiffer
 
 • GlyphGiffer lets you export glyphs from a folder of .ufo files as an animated .gif.
 
+• Typedesigners can create a time laps of the design process of a certain charactershape from all .ufo files created in the design process.
+
 • Input ether glyphnames seperated by / (e.g. /Aacute/Ampersand/Eth) or a string of A-Z and a-z chars (e.g. ABCDEFG)
 
 • Options for playing with Random RGB colors and Transparency etc.
