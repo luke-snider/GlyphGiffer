@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>addToMenu</key>
+	<array>
+		<dict>
+			<key>path</key>
+			<string>GlyphGiffer.py</string>
+			<key>preferredName</key>
+			<string>GlyphGiffer</string>
+			<key>shortKey</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>developer</key>
+	<string>Lukas Schneider</string>
+	<key>developerURL</key>
+	<string>www.revolvertype.com</string>
+	<key>html</key>
+	<false/>
+	<key>launchAtStartUp</key>
+	<integer>0</integer>
+	<key>mainScript</key>
+	<string></string>
+	<key>name</key>
+	<string>GlyphGiffer</string>
+	<key>timeStamp</key>
+	<real>1510842180.1664629</real>
+	<key>version</key>
+	<string>1.0</string>
+	<key>com.robofontmechanic.Mechanic</key>
+	<dict>
+	  <key>repository</key>
+	  <string>luke-snider/GlyphWalker</string>
+	  <key>summary</key>
+	  <string>GlyphGiffer lets you export glyphs from a folder of .ufo files as an animated .gif.</string>
+	</dict>
+</dict>
+</plist>
