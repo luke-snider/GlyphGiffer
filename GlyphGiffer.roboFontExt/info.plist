@@ -32,7 +32,7 @@
 	<key>com.robofontmechanic.Mechanic</key>
 	<dict>
 	  <key>repository</key>
-	  <string>luke-snider/GlyphWalker</string>
+	  <string>luke-snider/GlyphGiffer</string>
 	  <key>summary</key>
 	  <string>GlyphGiffer lets you export glyphs from a folder of .ufo files as an animated .gif.</string>
 	</dict>
