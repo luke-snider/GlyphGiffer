@@ -5,10 +5,10 @@ GlyphGiffer
 • Options for playing with Random RGB colors and Transparency etc.
 
 
-![alt text](https://github.com/luke-snider/GlyphGiffer/blob/master/GlyphWalker/GlyphGiffer_screen1.png)
+![alt text](https://github.com/luke-snider/GlyphGiffer/blob/master/GlyphGiffer_screen1.png)
 
 
-![alt text](https://github.com/luke-snider/GlyphGiffer/blob/master/GlyphWalker/GlyphGiffer_screen2.gif)
+![alt text](https://github.com/luke-snider/GlyphGiffer/blob/master/GlyphGiffer_screen2.gif)
 
 
-![alt text](https://github.com/luke-snider/GlyphGiffer/blob/master/GlyphWalker/GlyphGiffer_screen3.gif)
+![alt text](https://github.com/luke-snider/GlyphGiffer/blob/master/GlyphGiffer_screen3.gif)
