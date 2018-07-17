@@ -212,6 +212,17 @@ class GlyphGiffer():
                 pass
         return self.transparencyFactors
 
+
+    def _convertNSColors(self, colorList):
+        finalColorList = []
+        for a in colorList:
+            try:
+                finalColorList.append(float(a))
+            except ValueError:
+                pass
+        return finalColorList
+
+
     def _colorization(self, countForTransparency):
         ### transparency
         transparenyFactors = self._getTransparencyMultipliers()
@@ -223,8 +234,9 @@ class GlyphGiffer():
         backgroundRandomsValues = self._colorRandomRGBList()[2]
 
         ############ Fill COLOR
-        fillColor = str(self.w.glyphFillColor.get()).strip("NSCalibratedRGBColorSpace ")
-        fillColor = map(float, fillColor.split(" "))
+        colorList = str(self.w.glyphFillColor.get()).split(" ")
+        fillColor = self._convertNSColors(colorList)
+
         finalGlyphFillcolor = []
         for i, value in enumerate(fillColor):
             if i in fillRandomValues:
@@ -238,8 +250,9 @@ class GlyphGiffer():
         finalGlyphFillcolor = map(float, finalGlyphFillcolor)
         
         ############ Stroke COLOR
-        strokecolor = str(self.w.glyphStrokeColor.get()).strip("NSCalibratedRGBColorSpace ")
-        strokecolor = map(float, strokecolor.split(" "))
+        colorList = str(self.w.glyphStrokeColor.get()).split(" ")
+        strokecolor = self._convertNSColors(colorList)
+
         finalStrokecolor = []
         for i, value in enumerate(strokecolor):
             if i in strokeRandomValues:
@@ -253,8 +266,9 @@ class GlyphGiffer():
         finalStrokecolor = map(float, finalStrokecolor)
 
         ############ BG COLOR
-        bgcolor = str(self.w.backgroundColor.get()).strip("NSCalibratedRGBColorSpace ")
-        bgcolor = map(float, bgcolor.split(" "))
+        colorList = str(self.w.backgroundColor.get()).split(" ")
+        bgcolor = self._convertNSColors(colorList)
+
         finalBGcolor = []
         for i, value in enumerate(bgcolor):
             if i in backgroundRandomsValues:
