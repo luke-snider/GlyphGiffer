@@ -13,7 +13,7 @@ GlyphGiffer
 
 • Y-Shift enables y-shifting of the drawn glyph on the canvas
 
-
+• Needs Drawbot: https://github.com/typemytype/drawBotRoboFontExtension
 
 ![alt text](https://github.com/luke-snider/GlyphGiffer/blob/master/GlyphGiffer_screen1.png)
 
