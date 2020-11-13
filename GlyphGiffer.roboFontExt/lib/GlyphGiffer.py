@@ -3,11 +3,15 @@
 Lukas Schneider - Revolver Type Foundry - www.revolvertype.com
 GlyphGiffer lets you export glyphs from a folder of .ufo files as an animated .gif.
 '''
+from __future__ import print_function
 
 import os
 from vanilla import *
 from vanilla.dialogs import getFolder
-from robofab.interface.all.dialogs import ProgressBar
+#from robofab.interface.all.dialogs import ProgressBar
+from LS_dialogs.LSdialogs import AskYesNoCancel, ProgressBar
+
+
 from AppKit import NSColor
 
 ### 4 drawBot
@@ -75,8 +79,8 @@ class GlyphGiffer():
         self.w.randomBB = CheckBox((254, y, 20, 20), "", sizeStyle="mini", value=False)        
         y = 215
         self.w.transparencyInfo = TextBox((10, y+5, 90, 20), "Color Fade", sizeStyle="small")
-        self.w.FTransparency = CheckBox((110, y, 50, 20), "Fill", sizeStyle="small", value=True)
-        self.w.STransparency = CheckBox((155, y, 60, 20), "Stroke", sizeStyle="small", value=True)
+        self.w.FTransparency = CheckBox((110, y, 50, 20), "Fill", sizeStyle="small", value=False)
+        self.w.STransparency = CheckBox((155, y, 60, 20), "Stroke", sizeStyle="small", value=False)
         self.w.BTransparency = CheckBox((225, y, 50, 20), "BG", sizeStyle="small", value=False, callback=self.transparentBGUserInput)
         self.w.BGtransparentColor = ColorWell((260, y, 20, 20), color=NSColor.colorWithCalibratedRed_green_blue_alpha_(1, 1, 1, 1), callback=self.colorWell1UserInput)
         self.w.BGtransparentColor.enable(False)
@@ -391,7 +395,7 @@ class GlyphGiffer():
                         self._drawGlyph(glyph)
                     ## if the glyph doesn't exist: DRAW ONLY BACKGROUND
                     else:
-                        print glyphName, "glyph doesn't exist in one of the fonts!"
+                        print (glyphName, "glyph doesn't exist in one of the fonts!")
                                     
                     restore()
                     ############### END Glyph(s)
