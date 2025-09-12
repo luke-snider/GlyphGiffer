@@ -424,7 +424,7 @@ class GlyphGiffer():
             exportstring = str(os.path.expanduser('~'))+"/Desktop/"+glyphName+date+".gif"
 
         
-        saveImage([exportstring])
+        saveImage(exportstring)
         endDrawing()
         
         progressBar.close()
